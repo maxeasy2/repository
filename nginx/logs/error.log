@@ -1,0 +1,14 @@
+2020/04/28 13:29:02 [error] 6#6: *1 "/usr/share/nginx/html/index.html" is not found (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2020/04/28 13:29:04 [error] 6#6: *1 "/usr/share/nginx/html/index.html" is not found (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2020/04/28 13:58:02 [alert] 1#1: detected a LuaJIT version which is not OpenResty's; many optimizations will be disabled and performance will be compromised (see https://github.com/openresty/luajit2 for OpenResty's LuaJIT or, even better, consider using the OpenResty releases from https://openresty.org/en/download.html)
+2020/04/28 14:04:09 [notice] 7#7: signal process started
+2020/04/28 14:04:09 [alert] 1#1: detected a LuaJIT version which is not OpenResty's; many optimizations will be disabled and performance will be compromised (see https://github.com/openresty/luajit2 for OpenResty's LuaJIT or, even better, consider using the OpenResty releases from https://openresty.org/en/download.html)
+sh: /usr/share/nginx/script/test.sh: not found
+sh: /usr/share/nginx/script/test.sh: not found
+2020/04/28 14:08:43 [emerg] 15#15: duplicate location "/" in /etc/nginx/conf.d/default.conf:19
+2020/04/28 14:09:04 [notice] 21#21: signal process started
+2020/04/28 14:09:04 [alert] 1#1: detected a LuaJIT version which is not OpenResty's; many optimizations will be disabled and performance will be compromised (see https://github.com/openresty/luajit2 for OpenResty's LuaJIT or, even better, consider using the OpenResty releases from https://openresty.org/en/download.html)
+sh: /usr/share/nginx/script/test.sh: not found
+sh: /usr/share/nginx/script/test.sh: not found
+2020/04/28 14:10:02 [notice] 29#29: signal process started
+2020/04/28 14:10:02 [alert] 1#1: detected a LuaJIT version which is not OpenResty's; many optimizations will be disabled and performance will be compromised (see https://github.com/openresty/luajit2 for OpenResty's LuaJIT or, even better, consider using the OpenResty releases from https://openresty.org/en/download.html)

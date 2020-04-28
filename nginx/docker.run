@@ -1,0 +1,11 @@
+#!/bin/bash
+NGINX_VOLUME_PATH=/develop/docker
+IMAGE_NAME=firesh/nginx-lua
+#IMAGE_NAME=nginx:alpine
+#IMAGE_NAME=nginx:latest
+
+docker run -d --name nginx --rm -p 80:80 \
+-v ${NGINX_VOLUME_PATH}/nginx/resource:/usr/share/nginx \
+-v ${NGINX_VOLUME_PATH}/nginx/conf.d:/etc/nginx/conf.d \
+-v ${NGINX_VOLUME_PATH}/nginx/logs:/var/log/nginx \
+${IMAGE_NAME}

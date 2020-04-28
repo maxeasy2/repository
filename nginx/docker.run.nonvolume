@@ -1,0 +1,5 @@
+#!/bin/bash
+NGINX_VOLUME_PATH=/develop/docker/nginx
+
+docker run -d --name nginx --rm -p 80:80 \
+nginx

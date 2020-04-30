@@ -3,6 +3,7 @@ NGINX_VOLUME_PATH=/develop/docker
 IMAGE_NAME=firesh/nginx-lua
 #IMAGE_NAME=nginx:alpine
 #IMAGE_NAME=nginx:latest
+ALPINE_BASH_INSTALL=${1:-N}
 
 docker run -d --name nginx --rm -p 80:80 \
 -v ${NGINX_VOLUME_PATH}/nginx/resource:/usr/share/nginx \
@@ -10,6 +11,6 @@ docker run -d --name nginx --rm -p 80:80 \
 -v ${NGINX_VOLUME_PATH}/nginx/logs:/var/log/nginx \
 ${IMAGE_NAME}
 
-if [ $IMAGE_NAME != 'nginx:latest' ]; then
+if [ $ALPINE_BASH_INSTALL == 'Y' ]; then
   docker exec -it nginx apk add --no-cache bash
 fi

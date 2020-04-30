@@ -9,3 +9,7 @@ docker run -d --name nginx --rm -p 80:80 \
 -v ${NGINX_VOLUME_PATH}/nginx/conf.d:/etc/nginx/conf.d \
 -v ${NGINX_VOLUME_PATH}/nginx/logs:/var/log/nginx \
 ${IMAGE_NAME}
+
+if [ $IMAGE_NAME != 'nginx:latest' ]; then
+  docker exec -it nginx apk add --no-cache bash
+fi

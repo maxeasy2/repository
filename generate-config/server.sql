@@ -1,7 +1,7 @@
 SELECT 
 	CASE t.number 
 		WHEN 1 
-			THEN 'mkdir -p {conf_path}' || server.path
+			THEN 'mkdir -p {conf_path}' || server.path 
 			ELSE 'touch {conf_path}' || server.path || '/' || server.service || '.conf'
 		END cmd
 FROM copy_t t,
@@ -35,6 +35,7 @@ from
 	,port_info port
 where  web.host_id = was.parent_id
 and was.service = port.service
+and was.node_cnt = port.node_cnt
 and web.type ='web'
 and web.use_yn ='Y'
 and was.type = 'was'
